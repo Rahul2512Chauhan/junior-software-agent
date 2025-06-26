@@ -1,6 +1,7 @@
 // hello.ts
-function greet(name: string) {
-    console.log(`Hello, ${name}`);
+function greet(name: string | null) {
+    console.log(`Hello, ${name ?? "Guest"}`);
 }
 
 greet("world");
+greet(null);
